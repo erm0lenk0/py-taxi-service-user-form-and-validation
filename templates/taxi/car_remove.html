@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h2>Remove yourself from the car drivers {{ car.model }}?</h2>
+  <form method="post">
+    {% csrf_token %}
+    <button type="submit" class="btn btn-danger">Yes, remove</button>
+    <a href="{% url 'taxi:car-detail' car.pk %}" class="btn btn-secondary">No</a>
+  </form>
+{% endblock %}
