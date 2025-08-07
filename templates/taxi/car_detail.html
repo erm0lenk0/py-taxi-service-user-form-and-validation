@@ -20,7 +20,7 @@
     {% endfor %}
   </ul>
   <div class="action-buttons">
-    <a href="{% url 'taxi:driver-update' car.pk %}" class="update-button">Update</a>
-    <a href="{% url 'taxi:driver-delete' car.pk %}" class="delete-button">Delete</a>
+    <a href="{% url 'taxi:car-update' car.pk %}" class="btn btn-primary">Update</a>
+    <a href="{% url 'taxi:car-delete' car.pk %}" class="btn btn-danger">Delete</a>
   </div>
 {% endblock %}
